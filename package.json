@@ -1,0 +1,20 @@
+{
+  "name": "ardu-lc-revision",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gamified Leaving Certificate revision web app (static HTML/JS), packaged for iOS/Android with Capacitor.",
+  "scripts": {
+    "serve": "npx --yes http-server www -p 8080 -c-1",
+    "cap:add:android": "npx cap add android",
+    "cap:add:ios": "npx cap add ios",
+    "cap:sync": "npx cap sync",
+    "cap:open:android": "npx cap open android",
+    "cap:open:ios": "npx cap open ios"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.1.2",
+    "@capacitor/cli": "^6.1.2",
+    "@capacitor/core": "^6.1.2",
+    "@capacitor/ios": "^6.1.2"
+  }
+}

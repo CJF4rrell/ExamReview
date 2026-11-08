@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Gamified Leaving Certificate revision: bite-sized lessons, section checks, streaks and a revision heat map, prioritised by the marking schemes.">
+  <meta name="theme-color" content="#13795b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>Ardú — Leaving Cert Revision</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <div id="modeBanner" class="mode-banner hidden">Local profile — progress is saved on this device only.</div>
+  <header id="topbar" class="topbar hidden">
+    <a class="brand" href="#/home"><span class="brand-mark">A</span><span id="brandName">Ardú</span></a>
+    <div id="topStats" class="top-stats"></div>
+  </header>
+  <nav id="tabbar" class="tabbar hidden" aria-label="Main">
+    <a href="#/home" data-tab="home"><span class="ico" aria-hidden="true">🏠</span>Home</a>
+    <a href="#/subjects" data-tab="subjects"><span class="ico" aria-hidden="true">📚</span>Subjects</a>
+    <a href="#/progress" data-tab="progress"><span class="ico" aria-hidden="true">📈</span>Progress</a>
+    <a href="#/settings" data-tab="settings"><span class="ico" aria-hidden="true">⚙️</span>Settings</a>
+  </nav>
+  <main id="view" class="app" aria-live="polite"></main>
+
+  <script src="js/config.js"></script>
+  <script src="data/catalogue.js"></script>
+  <script src="data/subjects/english.js"></script>
+  <script src="data/subjects/irish.js"></script>
+  <script src="data/subjects/maths.js"></script>
+  <script src="data/subjects/biology.js"></script>
+  <script src="data/subjects/business.js"></script>
+  <script src="data/subjects/geography.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/engine.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
